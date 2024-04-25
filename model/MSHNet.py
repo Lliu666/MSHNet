@@ -95,10 +95,10 @@ class MSHNet(nn.Module):
         self.output_3 = nn.Conv2d(param_channels[3], 1, 1)
         '''
         3x3 conv
-        self.output_0 = nn.Conv2d(param_channels[0], 1, 1)
-        self.output_1 = nn.Conv2d(param_channels[1], 1, 1)
-        self.output_2 = nn.Conv2d(param_channels[2], 1, 1)
-        self.output_3 = nn.Conv2d(param_channels[3], 1, 1)
+        self.output_0 = nn.Conv2d(param_channels[0], 1, 3, 1, 1)
+        self.output_1 = nn.Conv2d(param_channels[1], 1, 3, 1, 1)
+        self.output_2 = nn.Conv2d(param_channels[2], 1, 3, 1, 1)
+        self.output_3 = nn.Conv2d(param_channels[3], 1, 3, 1, 1)
         '''
 
         self.final = nn.Conv2d(4, 1, 3, 1, 1)
